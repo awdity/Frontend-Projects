@@ -1,0 +1,237 @@
+/* ******************************************** MIN-WIDTH ****** */
+
+/* Small devices (landscape phones, 576px and */
+@media (min-width: 576px) {
+  .tutor-container {
+    max-width: 540px;
+  }
+
+  .tutor-footer-menu {
+    text-align: right;
+  }
+}
+
+/* Medium devices (tablets, 768px and */
+@media (min-width: 768px) {
+  .tutor-container {
+    max-width: 720px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and */
+@media (min-width: 992px) {
+  .tutor-container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and */
+@media (min-width: 1200px) {
+  .tutor-container {
+    max-width: 1140px;
+  }
+}
+
+
+
+/* ******************************************** MAX-WIDTH ****** */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .tutor-footer-menu ul li a {
+    padding: 0px 5px;
+    line-height: 1.3rem;
+  }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+  .col-md-4,
+  .col-md-3 {
+    flex-basis: var(--col-6);
+    max-width: var(--col-6);
+  }
+
+  .tutor-hero-video iframe {
+    width: 540px;
+  }
+
+  .flex-md-cloumn {
+    flex-direction: column;
+  }
+
+  .header-content,
+  header.tutor-main-header .button-group {
+    text-align: center;
+  }
+
+  header.tutor-main-header .button-group {
+    margin-right: auto;
+  }
+
+  /* typography */
+  .tutor-hero-txt h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-top: 20px;
+  }
+
+  .tutor-hero-txt p {
+    font-size: 1.43rem;
+    line-height: 2rem;
+    margin-top: 30px;
+  }
+
+  .tutor-hero-txt p br,
+  .tutor-sec-title h3 br,
+  .tutor-promotion-txt br {
+    display: none;
+  }
+
+  .tutor-hero-content .button-group {
+    margin-top: 50px;
+  }
+
+  .tutor-promo-image,
+  .tutor-features-img .feature-image {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+
+  .tutor-promotion-txt.promotion-2 {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .tutor-promotion-img.promotion-2 .tutor-promo-image {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .tutor-features-img .feature-image {
+    margin-right: 0px;
+  }
+
+  .f-row-reverse .feature-image {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+  .col-md-4,
+  .col-md-3 {
+    flex-basis: var(--col-12);
+    max-width: var(--col-12);
+  }
+
+  .tutor-hero-video iframe {
+    width: 400px;
+  }
+
+  /* typography */
+  .tutor-hero-txt h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .tutor-hero-txt p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .tutor-footer-menu {
+    text-align: center;
+  }
+
+}
+
+/* Extra small devices (portrait phones, less than 450px) */
+@media (max-width: 450px) {
+
+  .col-md-4,
+  .col-md-3 {
+    flex-basis: var(--col-12);
+    max-width: var(--col-12);
+  }
+
+  .tutor-hero-video iframe {
+    width: 250px;
+  }
+
+}
+
+/* Extra small devices (portrait phones, less than 350px) */
+@media (max-width: 350px) {
+  .button-group .button {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .button-group .button+.button {
+    margin-left: 0px;
+  }
+
+  .tutor-course-item .tutor-course-footer {
+    flex-direction: column
+  }
+
+  .tutor-course-item .tutor-course-body .course-meta {
+    flex-direction: column;
+  }
+
+  .tutor-course-item .author-name,
+  .tutor-course-item .course-category {
+    margin-top: 18px;
+  }
+
+}
+
+
+/* ******************************************** MIN and MAX WIDTH ****** */
+
+/* Small devices (landscape phones, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 576px to 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .tutor-course-item .tutor-course-body .course-title {
+    text-align: center;
+  }
+
+  .tutor-course-item .tutor-course-body .course-meta {
+    flex-direction: column;
+  }
+
+  .tutor-course-item .author-name,
+  .tutor-course-item .course-category {
+    margin-top: 18px;
+  }
+
+  .tutor-course-item .tutor-course-footer {
+    flex-direction: column
+  }
+
+  .tutor-course-item .tutor-course-body,
+  .tutor-course-item .tutor-course-footer {
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, more than 1200px ) */
+@media (min-width: 1200px) {}

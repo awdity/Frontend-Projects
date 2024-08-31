@@ -1,0 +1,222 @@
+/* 
+ *   Global Css
+ ******************************************* */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
+
+    --col-1: calc(8.33333333% * 1);
+    --col-2: calc(8.33333333% * 2);
+    --col-3: calc(8.33333333% * 3);
+    --col-4: calc(8.33333333% * 4);
+    --col-5: calc(8.33333333% * 5);
+    --col-6: calc(8.33333333% * 6);
+    --col-7: calc(8.33333333% * 7);
+    --col-8: calc(8.33333333% * 8);
+    --col-9: calc(8.33333333% * 9);
+    --col-10: calc(8.33333333% * 10);
+    --col-12: calc(8.33333333% * 12);
+}
+
+
+/* 12 coloumn grid css */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-12 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-1 {
+    max-width: var(--col-1);
+    flex-basis: var(--col-1);
+}
+
+.col-md-2 {
+    max-width: var(--col-2);
+    flex-basis: var(--col-2);
+}
+
+.col-md-3 {
+    max-width: var(--col-3);
+    flex-basis: var(--col-3);
+}
+
+.col-md-4 {
+    max-width: var(--col-4);
+    flex-basis: var(--col-4);
+}
+
+.col-md-5 {
+    max-width: var(--col-5);
+    flex-basis: var(--col-5);
+}
+
+.col-md-6 {
+    max-width: var(--col-6);
+    flex-basis: var(--col-6);
+}
+
+.col-md-7 {
+    max-width: var(--col-7);
+    flex-basis: var(--col-7);
+}
+
+.col-md-8 {
+    max-width: var(--col-8);
+    flex-basis: var(--col-8);
+}
+
+.col-md-12 {
+    max-width: var(--col-12);
+    flex-basis: var(--col-12);
+}
+
+/* ******************************************** MIN-WIDTH ****** */
+/* Small devices (landscape phones, 576px and */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium devices (tablets, 768px and */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* ******************************************** MAX-WIDTH ****** */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .col-md-6 {
+        flex-basis: var(--col-12);
+        max-width: var(--col-12);
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .col-md-3,
+    .col-md-4,
+    .col-md-5 {
+        flex-basis: var(--col-6);
+        max-width: var(--col-6);
+    }
+
+    .col-md-6,
+    .col-md-7,
+    .col-md-8 {
+        flex-basis: var(--col-12);
+        max-width: var(--col-12);
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+
+    .col-md-1 {
+        flex-basis: var(--col-4);
+        max-width: var(--col-4);
+    }
+
+    .col-md-2 {
+        flex-basis: var(--col-6);
+        max-width: var(--col-6);
+    }
+
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6 {
+        flex-basis: var(--col-12);
+        max-width: var(--col-12);
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 450px) */
+@media (max-width: 450px) {
+    .col-md-1 {
+        flex-basis: var(--col-6);
+        max-width: var(--col-6);
+    }
+
+    .col-md-2 {
+        flex-basis: var(--col-12);
+        max-width: var(--col-12);
+    }
+}
+
+/* Extra small devices (portrait phones, less than 350px) */
+@media (max-width: 350px) {
+
+    .col-md-1,
+    .col-md-2 {
+        flex-basis: var(--col-12);
+        max-width: var(--col-12);
+    }
+}

@@ -1,0 +1,35 @@
+@media only screen and (max-width: 768px) {
+  .feature{
+  	padding-top: 40px;
+  }
+
+  .feature .l, .feature .r {
+    	padding: 0 15px;
+    	margin-right: 0px;
+    	text-align: justify;
+	}
+
+	.mshow{
+		display: block;
+	}
+
+	.mhide{
+		display: none;
+	}
+
+	.feature .item {
+	    margin-bottom: 40px;
+	}
+
+	.feature .rp img {
+	    padding-right: 0px;
+	}
+
+	.carousel {
+	    padding: 1px 0px 50px 0;
+	}
+
+	.feature .item h1, .carousel h1 {
+	    margin: 30px 0px 10px 0px;
+	}
+}

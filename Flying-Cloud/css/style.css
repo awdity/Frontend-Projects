@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Helvetica';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+header{
+	padding-top: 20px;
+	background: #a1dbff; /* Old browsers */
+	background: -moz-linear-gradient(top, #a1dbff 0%, #cbebff 47%, #fff 100%, #fff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #a1dbff 0%,#cbebff 47%,#fff 100%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #a1dbff 0%,#cbebff 47%,#fff 100%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+	min-height: 600px;
+}
+
+
+.animation{
+	position: absolute;
+    width: 100%;
+}
+
+header h1{
+	font-family: 'Helvetica';
+	text-align: center;
+	font-size: 32px;
+	margin: 80px 0px 0px 0px;
+	position: relative;
+	line-height: 45px;
+}
+
+.cl1{
+	margin: 0px 0px 0px 0px;
+}
+
+.cl2{
+	margin: 0px 0px 0px 0px;
+}
+
+.cl3{
+	margin: 100px 0px 0px 0px;
+}
+
+.cl4{
+	margin: 0px 0px 0px 0px;
+}
+
+.cl5{
+	margin: 60px 0px 0px 0px;
+}
+
+
+
+
+
+
+.countdowncontainer{
+	font-family: 'Helvetica';
+	text-align: center;
+	font-size: 18px;
+	margin: 80px auto 0px;
+	position: relative;
+
+}
+
+.countdowncontainer tr.info td{
+	font-size: 32px;
+}
+
+.countdowncontainer td{
+	width: 200px;
+	height: 55px;
+}
+
+.hill{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.infob {
+	background-color: #4378F8;
+	width: 150px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 0px;
+	color: #fff;
+	display: block;
+} /* Blue */
+
+.infob:hover {background: #0b7dda;}
+
+.feature img{
+	width: 100%;
+}
+
+.feature{
+	padding: 80px 0 0 0;
+	background: #D5E2FF; /* Old browsers */
+	background: -moz-linear-gradient(top, #D5E2FF 0%, #D5E2FF 47%, #fff 100%, #fff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #D5E2FF 0%,#D5E2FF 47%,#fff 100%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #D5E2FF 0%,#D5E2FF 47%,#fff 100%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5E2FF', endColorstr='#f0f9ff',GradientType=0 ); /* IE6-9 */
+	
+}
+.feature .item{
+	margin-bottom: 100px;
+}
+
+.feature .l{
+	padding: 0 0 0 30%; 
+	margin-right: 20px;
+}
+
+.feature .r{
+	padding: 0 30% 0 0 ; 
+}
+
+.feature .rp img{
+	padding-right: 50px;
+}
+
+.feature .item h1, .carousel h1{
+	font-size: 28px;
+    line-height: 40px;
+    margin: 30px 0px 30px 0px;
+}
+
+.mshow{
+	display: none;
+}
+
+ .item p, .carousel p{
+	padding: 10px 0px 10px 0px;
+	line-height: 25px;
+	font-size: 14px;
+}
+.feature .col-md-6{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+.feature .infob{
+	margin: 40px 0 0 0;
+
+}
+
+.carousel{
+	background: #F4F4F4;
+	padding: 50px 0px 50px 0;
+	margin-bottom: 100px;
+}
+
+
+.carousel p{
+	color: #61686D;
+}
+
+.carousel .item {
+  position: relative;
+  margin-top: 40px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: .9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.carousel .item:hover .overlay {
+  height: 30%;
+}
+
+.text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  margin: 25px 10px 22px 22px;
+}
+
+.capp {
+  color: #000;
+  font-size: 14px;
+  position: absolute;
+  margin: 35px 10px 22px 22px;
+}
+
+
+
+
+
+
+
+
+

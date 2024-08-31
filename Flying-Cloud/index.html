@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flying Cloud</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		
+	</head>
+	<body>
+		<header>
+			<div class="animation">
+				<marquee behavior=scroll direction="left" scrollamount="4"><img src="img/cloud-2.png" class="cl1"></marquee>
+				<marquee behavior=scroll direction="left" scrollamount="6"><img src="img/cloud-5.png" class="cl2"></marquee>
+				<marquee behavior=scroll direction="left" scrollamount="8"><img src="img/cloud-4.png" class="cl3"></marquee>
+				<marquee behavior=scroll direction="left" scrollamount="5"><img src="img/cloud-1.png" class="cl4"></marquee>
+				<marquee behavior=scroll direction="left" scrollamount="7"><img src="img/cloud-3.png" class="cl5"></marquee>
+
+				
+				
+			</div>
+			<div class="container">
+				<h1>We build successful, long-lasting,<br>profitable products for our clients</h1>
+				<table class="countdowncontainer text-center">
+					<tr class="info">
+						<td id="hours"></td>
+						<td id="minutes"></td>
+						<td id="seconds"></td>
+					</tr>
+					<tr>
+						<td>Hours</td>
+						<td>Minutes</td>
+						<td>Seconds</td>
+					</tr>
+				</table>
+				<button class="btn infob center-block">Get Started</button>
+				<img src="img/hill.png" class="hill">
+			</div>
+		</header>
+
+
+		<section class="feature">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 mshow">
+						<img src="img/feature1.jpg">
+					</div>
+					<div class="col-md-6">
+						<div class="item l">
+							<h1>We build successful,<br>long-lasting.</h1>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believabl</p>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believabl</p>	
+							<button class="btn infob center-block">Get Started</button>
+						</div>
+					</div>
+					<div class="col-md-6 mhide">
+						<img src="img/feature1.jpg">
+					</div>
+					<div class="col-md-6 rp">
+						<img src="img/feature2.png">
+					</div>
+					<div class="col-md-6">
+						<div class="item r">
+							<h1>We build successful,<br>long-lasting.</h1>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believabl</p>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believabl</p>	
+							<button class="btn infob center-block">Get Started</button>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						
+					</div>
+					<div class="col-md-6">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="carousel">
+			<div class="container">
+				<h1>Carousel</h1>
+				<p>It is a long established fact that a reader will be distracted by the readable conten<br> when looking at its layout. The point of using Lorem Ipsum is that</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="item">
+							<img src="img/person1.png" class="image">
+							<div class="overlay">
+							    <div class="text">Yi Chun-Hwa</div>
+							    <p class="capp">Business Developer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<img src="img/person2.png" class="image">
+							<div class="overlay">
+							    <div class="text">Yi Chun-Hwa</div>
+							    <p class="capp">Business Developer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<img src="img/person3.png" class="image">
+							<div class="overlay">
+							    <div class="text">Yi Chun-Hwa</div>
+							    <p class="capp">Business Developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				
+
+
+			</div>
+		</section>
+		
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("May 10, 2019 2:50:55").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get todays date and time
+	  var now = new Date().getTime();
+	    
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+	    
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)+ Math.floor(distance / (1000 * 60 * 60 * 24))*24);
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	  // Output the result in an element with id="demo"
+	  
+	  
+	  document.getElementById("hours").innerHTML = hours;
+	  document.getElementById("minutes").innerHTML = minutes;
+	  document.getElementById("seconds").innerHTML = seconds;
+	    
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+
+
+
+	
+	</script>
+
+
+	<script src="js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,0 +1,1077 @@
+/* 
+ *   Reset Css
+ ******************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    color: #212127;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 46px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+
+/* 
+ *   Global Css
+ ******************************************* */
+:root {
+    --primary-color: #163BD7;
+    --danger-color: #ff0000;
+    --nav-hover-color: #0e62ff;
+    --white: #ffffff;
+    --black: #000000;
+    --primary-overlay: rgba(22, 61, 215, 0.8712);
+    --tag-primary: #9013FE;
+    --tag-new: #5ECD2B;
+    --tag-hot: #D0021B;
+    --rating-star: #F8C51C;
+    --content-heading: #4B5981;
+    --cont-heading-2: #212127;
+
+    --font-source-sans: "Source Sans Pro", sans-serif;
+    --font-quicksand: "Quicksand", "Source sans pro", sans-serif;
+    --font-muli: "Muli", "Source sans pro", sans-serif;
+    --font-helvetica: "Helvetica", "Quicksand", sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --transition: all .4s ease-in;
+
+    --col-1: calc(8.33333333% * 1);
+    --col-2: calc(8.33333333% * 2);
+    --col-3: calc(8.33333333% * 3);
+    --col-4: calc(8.33333333% * 4);
+    --col-5: calc(8.33333333% * 5);
+    --col-6: calc(8.33333333% * 6);
+    --col-7: calc(8.33333333% * 7);
+    --col-8: calc(8.33333333% * 8);
+    --col-9: calc(8.33333333% * 9);
+    --col-10: calc(8.33333333% * 10);
+    --col-12: calc(8.33333333% * 12);
+}
+
+html,
+body {
+    font-family: var(--font-source-sans);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #212127;
+    position: relative;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.d-in-block {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-align-center {
+    align-items: center;
+}
+
+.f-jc-space-between {
+    justify-content: space-between;
+}
+
+.f-jc-space-around {
+    justify-content: space-around;
+}
+
+.f-jc-space-evenly {
+    justify-content: space-evenly;
+}
+
+.f-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.f-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.ft-left {
+    float: left;
+}
+
+.ft-right {
+    float: right;
+}
+
+.ov-h {
+    overflow: hidden;
+}
+
+/* 12 coloumn grid css */
+
+section:before,
+section:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.tutor-container,
+.tutor-container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tutor-container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tutor-container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-1 {
+    flex-basis: var(--col-1);
+    max-width: var(--col-1);
+}
+
+.col-md-2 {
+    flex-basis: var(--col-2);
+    max-width: var(--col-2);
+}
+
+.col-md-3 {
+    flex-basis: var(--col-3);
+    max-width: var(--col-3);
+}
+
+.col-md-4 {
+    flex-basis: var(--col-4);
+    max-width: var(--col-4);
+}
+
+.col-md-5 {
+    flex-basis: var(--col-5);
+    max-width: var(--col-5);
+}
+
+.col-md-6 {
+    flex-basis: var(--col-6);
+    max-width: var(--col-6);
+}
+
+.col-md-7 {
+    flex-basis: var(--col-7);
+    max-width: var(--col-7);
+}
+
+.col-md-8 {
+    flex-basis: var(--col-8);
+    max-width: var(--col-8);
+}
+
+.col-md-12 {
+    flex-basis: var(--col-12);
+    max-width: var(--col-12);
+}
+
+/* 
+ *   Header Section Styles 
+ ******************************************* */
+header.tutor-main-header {
+    padding: 10px 0;
+}
+
+header.tutor-main-header .logo a {
+    font-family: var(--font-muli);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header.tutor-main-header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.tutor-main-header .navbar {
+    flex-grow: 1;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+header.tutor-main-header .logo,
+header.tutor-main-header .button-group {
+    width: 250px;
+}
+
+header.tutor-main-header .button-group {
+    text-align: right;
+    margin-top: 0;
+}
+
+header.tutor-main-header .logo a:hover {
+    color: var(--nav-hover-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+header.tutor-main-header nav.navbar ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+header.tutor-main-header nav.navbar ul li {
+    display: inline-block;
+}
+
+header.tutor-main-header nav.navbar ul li a {
+    font-family: var(--font-source-sans);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    padding: 0 12px;
+    text-decoration: none;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+}
+
+header.tutor-main-header nav.navbar ul li a i {
+    padding: 0 0 0 5px;
+}
+
+header.tutor-main-header nav.navbar ul li a:hover {
+    color: var(--nav-hover-color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.button-group:last-child {
+    margin-right: 0px;
+}
+
+.button-group {
+    font-family: var(--font-quicksand);
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+.button-group .button {
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: .5px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.button-group .button+.button {
+    margin-left: 15px;
+}
+
+.button-group .button-holo {
+    color: var(--white);
+    background: transparent;
+    border-color: var(--white);
+}
+
+.button-group .button-white {
+    color: var(--primary-color);
+    background: var(--white);
+    border-color: var(--white);
+}
+
+.button-group .button-primary {
+    color: var(--white);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button-group .button-primary:hover {
+    background: var(--content-heading);
+    border-color: var(--content-heading);
+}
+
+.button-group .button-holo:hover {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.button-group .login {
+    background: var(--white);
+    color: var(--black);
+    padding: 12px;
+}
+
+.tutor-hero-content .button-group .button {
+    padding: 6px 17px;
+}
+
+
+/* 
+ *   Hero Section  Styles 
+ ******************************************* */
+#tutor-hero-section {
+    background: url(https://picsum.photos/1920/1080?random=1) no-repeat center center / cover;
+    padding: 120px 0px 290px 0px;
+    margin-bottom: 175px;
+    position: relative;
+    z-index: 1;
+}
+
+#tutor-hero-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--primary-overlay);
+}
+
+.tutor-hero-txt {
+    color: var(--white);
+}
+
+.tutor-hero-txt h5 {
+    font-family: var(--font-muli);
+    color: var(--white);
+}
+
+.tutor-hero-txt h2 {
+    font-family: var(--font-quicksand);
+    font-size: 50px;
+    line-height: 65px;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+.tutor-hero-txt h6 {
+    font-family: var(--font-muli);
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 28px;
+    letter-spacing: .5px;
+    color: var(--white);
+}
+
+.tutor-hero-txt p {
+    font-family: var(--font-muli);
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.tutor-hero-txt .buttons {
+    margin-bottom: 25px;
+}
+
+.tutor-hero-video {
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translate(-50%, 50%);
+}
+
+.tutor-hero-video iframe {
+    width: 750px;
+    height: 350px;
+}
+
+/* 
+ *   Course Section Styles 
+ ******************************************* */
+#tutor-course {
+    padding: 45px 0px 100px 0px;
+}
+
+.tutor-sec-title {
+    margin-top: 10px;
+}
+
+.tutor-sec-title h5 {
+    opacity: 0.5;
+    font-family: var(--font-muli);
+    font-weight: 600;
+    font-size: 12px;
+    color: #212127;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.tutor-sec-title h3 {
+    font-family: var(--font-quicksand);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--cont-heading-2);
+}
+
+.tutor-sec-title.title-2 h3 {
+    font-family: var(--font-muli);
+}
+
+.tutor-course-content {
+    margin-top: 45px;
+}
+
+.tutor-course-filterbar {
+    font-family: Quicksand-Regular, sans-serif;
+    font-size: 14px;
+    color: #4B5981;
+}
+
+.tutor-course-filterbar .course-filter div {
+    padding: 4px 2px 2px 13px;
+    background: #F6FAFB;
+    border: 1px solid #E8EFF1;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.tutor-course-filterbar {
+    font-family: var(--font-quicksand);
+    color: #3f4b86;
+}
+
+.tutor-course-filterbar select {
+    border: none;
+    color: #4b59a2;
+    font-weight: 700;
+    background: transparent;
+}
+
+article.tutor-course-item {
+    /* max-width: 360px;
+    margin: 0 auto; */
+    margin-top: 30px;
+    transition: .2s all ease-in;
+    -webkit-transition: .2s all ease-in;
+    -moz-transition: .2s all ease-in;
+    -ms-transition: .2s all ease-in;
+    -o-transition: .2s all ease-in;
+}
+
+.tutor-course-header {
+    position: relative;
+}
+
+.tutor-course-header .course-thumb {
+    line-height: 0;
+    position: relative;
+}
+
+article.tutor-course-item .course-title h4:hover {
+    color: var(--primary-color);
+    opacity: .8;
+}
+
+article.tutor-course-item:hover {
+    box-shadow: 0 4px 23px rgba(0, 0, 0, .1);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    -o-transform: translateY(-1px);
+}
+
+.tutor-course-header .course-thumb img {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.tutor-course-header .tag-group,
+.tutor-course-header .save {
+    position: absolute;
+    top: 10px;
+}
+
+.tutor-course-header .tag-group {
+    left: 13px;
+}
+
+.tutor-course-header .save {
+    right: 13px;
+}
+
+.tutor-course-header .save .saved-i {
+    display: none;
+}
+
+.tutor-course-header .save.saved .save-i {
+    display: none;
+}
+
+.tutor-course-header .save.saved .saved-i {
+    display: inline-block;
+}
+
+.tutor-course-header .tag-group .tag {
+    padding: 3px 9px;
+    color: var(--white);
+    border-radius: 3px;
+    font-family: var(--font-quicksand);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.29px;
+    line-height: 25px;
+    margin-right: 3px;
+}
+
+.tutor-course-header .tag-group .tag-primary {
+    background: var(--tag-primary);
+}
+
+.tutor-course-header .tag-group .tag-new {
+    background: var(--tag-new);
+}
+
+.tutor-course-header .tag-group .tag-hot {
+    background: var(--tag-hot);
+}
+
+.tutor-course-header .save i {
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.tutor-course-item .tutor-course-body,
+.tutor-course-item .tutor-course-footer {
+    border: 1px solid #DCDFE5;
+    border-top: none;
+    padding: 15px;
+}
+
+.tutor-course-item .tutor-course-body .rating {
+    color: var(--rating-star);
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.tutor-course-item .tutor-course-body .course-title h4 {
+    margin-top: 10px;
+    color: var(--content-heading);
+    line-height: 30px;
+    font-size: 28px;
+}
+
+.tutor-course-item .tutor-course-body .course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 0;
+    font-family: var(--font-quicksand);
+    font-size: 14px;
+    color: var(--content-heading);
+    margin: 23px 0 11px 0;
+}
+
+.tutor-course-item .tutor-course-body .course-meta .author-thumb img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tutor-course-item .tutor-course-body .course-meta .author-name a,
+.tutor-course-item .tutor-course-body .course-meta .course-category a {
+    color: var(--content-heading);
+    text-decoration: none;
+}
+
+.tutor-course-item .tutor-course-body .course-meta .author-name a:hover,
+.tutor-course-item .tutor-course-body .course-meta .course-category a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.tutor-course-item .tutor-course-footer {
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    color: var(--content-heading);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: var(--transition);
+}
+
+.tutor-course-item .tutor-course-footer span i {
+    font-size: 18px;
+}
+
+.tutor-course-item .tutor-course-footer .views span {
+    opacity: 0.7;
+}
+
+.tutor-course-item .tutor-course-footer .price span {
+    font-family: var(--font-helvetica);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.tutor-course-item .tutor-course-footer .price span.previous {
+    text-decoration: line-through;
+    font-size: 14px;
+    opacity: .7;
+    margin-right: 3px;
+}
+
+.tutor-course-item .tutor-course-footer .hover-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 0 0 3px 3px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--primary-color);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.tutor-course-item:hover .tutor-course-footer div {
+    opacity: 0;
+}
+
+.tutor-course-item:hover .tutor-course-footer .hover-btn {
+    opacity: 1;
+}
+
+.tutor-course-item:hover .tutor-course-footer {
+    border-color: var(--primary-color);
+}
+
+
+/* 
+ *   Promotion Section 1  Styles 
+ ******************************************* */
+.tutor-promotion-section {
+    background: url(../img/tutor-bg.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 65px 0 55px 0;
+    overflow: hidden;
+}
+
+.tutor-promotion-section:before {
+    content: '';
+    position: absolute;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f5f8f9+35,3057d5+100 */
+    background: #f5f8f9;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #f5f8f9 35%, #3057d5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f5f8f9 35%, #3057d5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f5f8f9 35%, #3057d5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f8f9', endColorstr='#3057d5', GradientType=1);
+    /* IE6-9 */
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .6;
+}
+
+.tutor-promotion-section.promotion-section-2:before {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ac8cb9+0,af90bc+100 */
+    background: #ac8cb9;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ac8cb9 0%, #af90bc 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ac8cb9 0%, #af90bc 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ac8cb9 0%, #af90bc 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ac8cb9', endColorstr='#af90bc', GradientType=0);
+    /* IE6-9 */
+    opacity: 1;
+}
+
+.tutor-promotion-txt {
+    margin-right: 30px;
+}
+
+.tutor-promotion-txt h3 {
+    font-family: var(--font-quicksand);
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--content-heading);
+    margin-top: 0;
+}
+
+.tutor-promotion-txt p {
+    font-family: var(--font-muli);
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.tutor-promotion-txt h3,
+.tutor-promotion-txt p {
+    color: var(--content-heading);
+}
+
+.tutor-promotion-txt,
+.tutor-promotion-img {
+    max-width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.tutor-promotion-txt {
+    flex-grow: 1;
+}
+
+.tutor-promotion-img {
+    flex-grow: 2;
+}
+
+.tutor-promo-image {
+    line-height: 0;
+    margin-right: -200px;
+}
+
+
+/* 
+ *   Promotion Section 2  Styles 
+ ******************************************* */
+.tutor-promotion-txt.promotion-2 h3,
+.tutor-promotion-txt.promotion-2 p {
+    color: var(--white);
+}
+
+.tutor-promotion-txt.promotion-2 .button-white {
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.tutor-promotion-txt.promotion-2 .button-holo:hover {
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.tutor-promotion-txt.promotion-2 {
+    margin-right: 0px;
+    margin-left: 30px;
+    padding-left: 40px;
+}
+
+.tutor-promotion-img.promotion-2 .tutor-promo-image {
+    margin-right: 0;
+    margin-left: -200px;
+    text-align: right;
+}
+
+
+/* 
+ *   Features Section  Styles 
+ ******************************************* */
+#tutor-features-section,
+#tutor-features-section-2,
+#tutor-features-section-3 {
+    overflow: hidden;
+    position: relative;
+    padding: 75px 0 65px 0;
+}
+
+#tutor-features-section .tutor-sec-title.title-2 {
+    margin-bottom: 70px;
+}
+
+.tutor-features.tutor-sec-title h3 {
+    margin-top: 0;
+}
+
+.tutor-features-list,
+.tutor-features-img {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.tutor-features-list {
+    margin-right: 30px;
+}
+
+.tutor-features-img {
+    flex-grow: 1.45;
+}
+
+.tutor-features-img .feature-image {
+    margin-right: -200px;
+}
+
+.tutor-features-img .feature-image img {
+    box-shadow: 0 4px 23px 0px rgba(0, 0, 0, .1);
+}
+
+.tutor-features-all {
+    margin-top: 35px;
+    margin-left: 6px;
+}
+
+.tutor-features-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.tutor-features-item h4 {
+    font-family: var(--font-muli);
+    font-weight: var(--font-bold);
+    font-size: 16px;
+    color: var(--cont-heading-2);
+    letter-spacing: -0.2px;
+    margin-top: 0;
+    transition: 200ms;
+}
+
+.tutor-features-item p {
+    font-family: var(--font-muli);
+    font-weight: var(--font-regular);
+    font-size: 14px;
+    color: var(--cont-heading-2);
+    letter-spacing: -0.33px;
+    line-height: 22px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.tutor-features-item:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: #D8D8D8;
+    top: 6px;
+    left: 0;
+}
+
+.tutor-features-item:last-child::before {
+    display: none;
+}
+
+.tutor-features-item:not(:last-child) {
+    padding-bottom: 25px;
+}
+
+.tutor-features-item a {
+    position: relative;
+}
+
+.tutor-features-item a:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -29px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border: 6px solid #D8D8D8;
+    background: #D8D8D8;
+    transition: 200ms;
+}
+
+.tutor-features-item a:hover::after,
+.tutor-features-item.active a::after {
+    border-color: var(--primary-color);
+    background: #fff;
+}
+
+.tutor-features-item a:hover h4,
+.tutor-features-item.active a h4 {
+    color: var(--primary-color);
+}
+
+
+/* 
+ * Tutor Features Content * 2 * Styles
+ ******************************************* */
+#tutor-features-section-2 {
+    background: #F5F8F9;
+}
+
+.f-row-reverse .feature-image {
+    margin-right: 60px;
+    margin-left: -200px;
+    text-align: right;
+}
+
+
+/* 
+ *   Footer Section  Styles 
+ ******************************************* */
+#tutor-footer {
+    background: #212127;
+    padding: 20px 0;
+}
+
+.tutor-footer-content {
+    color: var(--white);
+}
+
+.tutor-footer-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.tutor-footer-menu ul li a {
+    padding: 5px 10px;
+    color: var(--white);
+}
+
+.tutor-footer-menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* 
+ *   RESPONSIVE Media Queries 
+ ******************************************* */

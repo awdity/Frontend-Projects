@@ -1,0 +1,221 @@
+/* ******************************************** MIN-WIDTH ****** */
+
+/* Small devices (landscape phones, 576px and */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and */
+@media (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and */
+@media (min-width: 1200px) {}
+
+
+/* ******************************************** MAX-WIDTH ****** */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+  h2 br,
+  h3 br,
+  h4 br,
+  h5 br,
+  p br {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #main-header {
+    padding: 10px 0;
+  }
+
+  #main-header.nav-toggle-bg,
+  .navigation.nav-toggle-show .navbar {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .navigation.nav-toggle-show .navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .navigation.nav-toggle-show .navbar ul li a {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation.nav-toggle-show .navbar ul li a:hover {
+    background: #ed145b;
+  }
+
+  .navigation.nav-toggle-show .navbar {
+    position: absolute;
+    width: 100%;
+    top: 99%;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .navigation .navbar {
+    display: none;
+  }
+
+  .navigation.nav-toggle-show .navbar .button-group {
+    margin-top: 20px;
+  }
+
+  .explore-info {
+    margin-top: 20px;
+  }
+
+  .price-item h2 {
+    font-weight: var(--font-light);
+    font-size: 55px;
+    line-height: 58px;
+  }
+
+  .button-group .button.big-button {
+    padding: 5px 15px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .speakers-item {
+    max-width: 260px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .silder-timer .timer-item {
+    padding: 0 15px;
+  }
+
+  .silder-timer .timer-item h2 {
+    font-size: 2.5rem;
+  }
+
+  .silder-timer .timer-item h3,
+  .silder-text h3 {
+    font-size: 1rem;
+  }
+
+  .silder-text h2 {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+
+  .price-content {
+    margin-top: 0px;
+  }
+
+  .price-item {
+    margin-top: 43px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .schedule-item {
+    text-align: center;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 450px) */
+@media (max-width: 450px) {
+
+  .header-content .logo {
+    width: 100px;
+  }
+
+  .header-content .button-group {
+    margin-left: 5px;
+  }
+
+  .silder-timer .timer-item {
+    padding: 0 8px;
+  }
+
+  .silder-timer .timer-item h2 {
+    font-size: 2rem;
+  }
+
+  .silder-timer .timer-item h3,
+  .silder-text h3 {
+    font-size: .8rem;
+    margin-top: 10px;
+  }
+
+  .silder-text h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 350px) */
+@media (max-width: 350px) {
+  .explore-info h3 {
+    font-size: 30px;
+  }
+
+  .explore-info h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+
+/* ******************************************** MIN and MAX WIDTH ****** */
+/* Small devices (landscape phones, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 576px to 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {}
+
+/* Medium devices (tablets, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .speaker-overlay .speaker-icons a {
+    font-size: 25px;
+  }
+
+  .price-item {
+    padding: 20px 20px 25px;
+  }
+
+  .blog-title h5 {
+    margin-top: 0;
+  }
+
+  .blog-title h5 a {
+    font-weight: var(--font-medium);
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+
+  .blog-meta span a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .blog-item .blog-info {
+    padding: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .speaker-overlay .speaker-icons a {
+    font-size: 30px;
+  }
+}
